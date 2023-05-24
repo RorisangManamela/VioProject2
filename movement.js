@@ -57,13 +57,14 @@ vivBioTL.to(".vivian", {
 
 const vivAbilitiesPath = [
   { left: 0, top: 0 },
-  { left: 400, top: 0 },
+  { left: 450, top: 100 },
 ]
 
 const vivAbilitiesTL = gsap.timeline({
 	scrollTrigger: {
-    trigger: ".abilities-container",
+    trigger: ".weaknesses",
 		scrub: 2,
+		start: 1500,
 	},
 })
 
@@ -72,7 +73,7 @@ vivAbilitiesTL.to(".vivian", {
 		path: vivAbilitiesPath,
 		autoRotate: false,
 	},
-	duration: 2,
+	duration: 1,
   
 });
 
@@ -85,5 +86,24 @@ vivAbilitiesTL.to(".vivian", {
 
 /////////////////////////////////// Main container /////////////////////////////////////
 
-
+const mainTitlePath = [
+	{ opacity: 0},
+  ]
+  
+  const mainTitleTL = gsap.timeline({
+	  scrollTrigger: {
+	  trigger: ".main-container",
+		  scrub: 2,
+		  start: 90,
+	  },
+  })
+  
+  mainTitleTL.to(".main-container", {
+	  motionPath: {
+		  path: mainTitlePath,
+		  autoRotate: false,
+	  },
+	  duration: 10,
+	ease: Power1.easeInOut,
+  });
 
