@@ -7,8 +7,8 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="media/images/kunai.png">
   </head>
 
   <body>
@@ -70,32 +70,139 @@
         <div class="abilities-container">
           <div class="abilities-wrapper">
             <h2 class="section-title" id="abilities-title">Abilities and Weapons</h2>
-            <div class="magic">
-              <h3> Magic </h3>
+            <div class="magicSection">
+              <h2> Magic </h3>
+              <img src="media/GIFs/magic.gif" class="magicItem"/> 
               <p> Has the magical ability to control gravity </p>
             </div>
-            <div class="kunai">
-              <h3> Kunai </h3>
+            <div class="kunaiSection">
+              <h2> Kunai </h3>
+              <div class="kunaiBox">
+                <img src="media/images/kunai.png" class="kunaiItem"/>  
+              </div>
               <p> Uses magic to levitate kunai knives </p>
             </div>
           </div>
         </div>
 
         <div class="stats-container">
-          <h2 class="section-title" id="stats-title">Stats</h2>
+          <div class="stats-wrapper">
+            <h2 class="section-title" id="stats-title">Stats</h2>
+            <div class="statsColumn">
+              <div id="strength" class="statistics">
+                <h2>Strength</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiEmpty.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiEmpty.png" class="kunaiRating ratingFive"/>  
+                </div>
+                <input class="nextButton" type="button" value="Next" onclick="strenghtToAgility();"/>
+              </div>
+              <div id="agility" class="statistics">
+                <h2>Hardiness</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiEmpty.png" class="kunaiRating ratingFive"/>  
+                </div>
+                <input class="nextButton" type="button" value="Back" onclick="agilityToStrength();"/>
+                <input class="nextButton" type="button" value="Next" onclick="agilityToIntelligence();"/>
+              </div>
+              <div id="intelligence" class="statistics">
+                <h2>Intelligence</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiEmpty.png" class="kunaiRating ratingFive"/>  
+                </div>
+                <input class="nextButton" type="button" value="Back" onclick="intelligenceToAgility();"/>
+                <input class="nextButton" type="button" value="Next" onclick="intelligenceToCharm();"/>
+              </div>
+              <div id="charm" class="statistics">
+                <h2>Charm</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiEmpty.png" class="kunaiRating ratingFive"/>  
+                </div>
+                <input class="nextButton" type="button" value="Back" onclick="charmToIntelligence();"/>
+                <input class="nextButton" type="button" value="Next" onclick="charmToStealth();"/>
+              </div>
+              <div id="stealth" class="statistics">
+                <h2>Stealth</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFive"/>
+                </div>
+                <input class="nextButton" type="button" value="Back" onclick="stealthToCharm();"/>
+                <input class="nextButton" type="button" value="Next" onclick="stealthToSpeed();"/>
+              </div>
+              <div id="speed" class="statistics">
+                <h2>Speed</h2>
+                <div class="rating">
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingOne"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingTwo"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingThree"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFour"/>
+                  <img src="media/images/kunaiUpright.png" class="kunaiRating ratingFive"/>
+                </div>
+                <input class="nextButton" type="button" value="Back" onclick="speedToStealth();"/>
+              </div>
+
+             
+            </div>
+            <div class="vivianStatSpace">
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="world-container">
-        <h2 class="section-title">Deimos</h2>
+        <div class="deimos-wrapper">
+          <h2 class="section-title"  id="deimos-title">Deimos</h2>
+          <img src="media/images/deimos.png" class="deimos"/>
+        </div>
       </div>
 
       <div class="character-container">
-        <h2 class="section-title">Characters</h2>
+        <div class="characters-wrapper">
+          <h2 class="section-title" id="characters-title">Other Characters</h2>
+          <div class="zach">
+            <img src="media/images/zach.png" class="photos zachImg"/>
+            <h3>The Best Friend</h3>
+          </div>
+          <div class="laz">
+            <img src="media/images/laz.png" class="photos lazImg"/>
+            <h3>The Lover</h3>
+          </div>
+          <div class="halt">
+            <img src="media/images/halt.png" class="photos haltImg"/>
+            <h3>The Enemy</h3>
+          </div>
+        </div>
       </div>
 
       <div class="author-container">
-        <h2 class="section-title">About the author</h2>
+        <div class="author-wrapper">
+          <h2 class="section-title" id="author-title">About the author</h2>
+          <ul class="author">
+            <li><b>Real name:</b> Rorisang Manamela </li>
+            <li><b>21 years old </li>
+            <li><b>Multimedia student</li>
+            <li><b>Anime and kpop fan</li>
+          </ul>
+        </div>
       </div>
 
       <div class="final-container">
