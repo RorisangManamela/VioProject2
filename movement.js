@@ -1,3 +1,5 @@
+document.body.style.cursor = "url('media/images/kunai.png') auto"
+
 gsap.registerPlugin(ScrollTrigger),
 gsap.registerPlugin(MotionPathPlugin),
 
@@ -63,9 +65,8 @@ const vivAbilitiesPath = [
 
 const vivAbilitiesTL = gsap.timeline({
 	scrollTrigger: {
-    trigger: ".weaknesses",
+    trigger: ".bio-container",
 		scrub: 2,
-		start: 1500,
 	},
 })
 
@@ -83,14 +84,13 @@ vivAbilitiesTL.to(".vivian", {
 
 const vivStatsPath = [
 	{ left: 550, top: 100 },
-	{ left: 750, top: 100 },
+	{ left: 750, top: 0 },
   ]
   
   const vivStatsTL = gsap.timeline({
 	  scrollTrigger: {
 	  trigger: ".stats-wrapper",
 		  scrub: 2,
-		  start: 1500,
 	  },
   })
   
@@ -105,9 +105,9 @@ const vivStatsPath = [
   
 
 
-/////////////////////////////////// deimos container /////////////////////////////////////
+/////////////////////////////////// character container /////////////////////////////////////
 
-const vivDeimosPath = [
+/*const vivDeimosPath = [
 	{ opacity: 1},
 	{ opacity: 0},
   ]
@@ -128,7 +128,7 @@ const vivDeimosPath = [
 	  duration: 1,
 	
   });
-  
+  */
 
   
 /////////////////////////////////// author container /////////////////////////////////////
@@ -142,7 +142,7 @@ const vivAuthorPath = [
 	  scrollTrigger: {
 	  trigger: ".author-title",
 		  scrub: 2,
-		  start: 6500,
+		  start: 6200,
 	  },
   })
   
@@ -151,7 +151,7 @@ const vivAuthorPath = [
 		  path: vivAuthorPath,
 		  autoRotate: false,
 	  },
-	  duration: 1,
+	  duration: 100,
 	
   });
   

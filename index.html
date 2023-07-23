@@ -12,12 +12,12 @@
   </head>
 
   <body>
-    <div class="night-section">
+    <div class="night-section" id="top">
     <section class="main-animation">
-      <!--<video width="500" muted autoplay loop class="vivian">
-        <source src="media/videos/video.webm" type="video/mp4" alt="Video of vivian">
-      </video>-->
-      <img src="media/images/vivian-temp.png" class="vivian"/>   
+      <video width="500" muted autoplay loop class="vivian">
+        <source src="media/videos/video.webm" type="video/webm" alt="Video of vivian">
+      </video>
+      <!--<img src="media/GIFs/AzureAnimation_AdobeExpress.gif" class="vivian"/>-->
     </section>
 
     <section class="body-section">
@@ -28,8 +28,9 @@
       
         <div class="main-container">
           <div class="main-text">
-            <h2 class="main-title">Azure Reaper</h2>
-            <h2 class="main-title" id="subtitle">The floating phantom of Deimos City</h2>
+            <img src="media/images/whiteLogo.png" class="logo" alt="logo"/>
+            <!--<h2 class="main-title">Azure Reaper</h2>
+            <h2 class="main-title" id="subtitle">The floating phantom of Deimos City</h2>-->
           </div>
         </div>
 
@@ -61,8 +62,8 @@
               <div class="weaknesses">
                 <h4>Weaknesses</h4>
                 Overconfidence<br/>
-                Scared of dogs<br/>
-                Meow
+                Afraid of dogs<br/>
+                Impatience
                 </div>
             </div>
         </div>
@@ -159,19 +160,30 @@
                 </div>
                 <input class="nextButton" type="button" value="Back" onclick="speedToStealth();"/>
               </div>
-
-             
-            </div>
-            <div class="vivianStatSpace">
             </div>
           </div>
         </div>
-      </div>
 
       <div class="world-container">
         <div class="deimos-wrapper">
-          <h2 class="section-title"  id="deimos-title">Deimos</h2>
-          <img src="media/images/deimos.png" class="deimos"/>
+          <h2 class="section-title"  id="deimos-title">The City of Deimos</h2>
+          <img src="media/images/clock-tower.png" class="deimosImg clock"/>
+          <div class="history">
+            <h2 id="history-title">History</h2>
+            <br/>
+            <p id="history-text">The city of Deimos is set in a distant Earth-like world, about a centuary into the future. <br/>
+              The city is sunny and brimming with laughter during the day. At night, the streets are rife with crime and darkness.
+            </p>
+          </div>
+          <img src="media/images/apartment.png" class="deimosImg house"/>
+          <div class="society">
+            <h2 id="society-title">Society</h2>
+            <br/>
+            <p id="society-text">The city of Deimos is set in a distant Earth-like world, about a centuary into the future. <br/>
+              Its inhabitants are much like us, although some of them possess strange magical powers. <br/>
+              It is believed that these abilities are gifts from the gods to those who are deemed worthy.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -202,6 +214,8 @@
             <li><b>Multimedia student</li>
             <li><b>Anime and kpop fan</li>
           </ul>
+          <img src="media/images/me.png" class="authorImg"/>
+          <a href="#top"><p class="back-to-top">Back to top</h3></a>
         </div>
       </div>
 

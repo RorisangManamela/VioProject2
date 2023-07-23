@@ -24,7 +24,7 @@ nav{
 }
 
 body{
-  height: 1500vh;
+  height: 100%;
   background: rgb(108,207,255);
   background: -moz-linear-gradient(0deg, rgba(108,207,255,1) 0%, rgba(100,185,223,1) 12.5%, rgba(97,175,212,1) 25%, rgba(55,138,172,1) 37.5%, rgba(38,88,152,1) 50%, rgba(29,66,131,1) 62.5%, rgba(14,26,101,1) 75%, rgba(5,11,56,1) 87.5%, rgba(1,4,27,1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(108,207,255,1) 0%, rgba(100,185,223,1) 12.5%, rgba(97,175,212,1) 25%, rgba(55,138,172,1) 37.5%, rgba(38,88,152,1) 50%, rgba(29,66,131,1) 62.5%, rgba(14,26,101,1) 75%, rgba(5,11,56,1) 87.5%, rgba(1,4,27,1) 100%);
@@ -32,22 +32,26 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6ccfff",endColorstr="#01041b",GradientType=1);
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: url('media/images/kunai.png'), auto;	
+  cursor: url(media/images/kunai.png);
+}
+
+.custom-cursor{
+  cursor: url(media/images/kunai.png);
 }
 
 
 /************************ CONTAINERS ***************************/
 
-.night-section{
+.body-section{
   background-image: url("media/images/stars.png");
-  height: 700vh;
   width: 100%;
   background-repeat: repeat;
   /*background-size: cover;*/
+  cursor: url('media/images/kunai.png'), auto;
 }
 
 .main-container{
-  position: fixed;
+  position: relative;
   top: 0vh;
   height: 200vh;
   width: 100%;
@@ -56,55 +60,29 @@ body{
 }
 
 .bio-container{
-  position: absolute;
-  top: 200vh;
-  height: 100vh;
-  width: 100%;
-  /*background-color: rgb(27, 27, 66);*/
   z-index: 0;
 }
 
 .abilities-container{
-  position: absolute;
-  top: 350vh;
-  height: 10vh;
-  width: 100%;
-  /*background-color: rgb(39, 39, 96);*/
   z-index: 1;
 }
 
 .stats-container{
-  position: absolute;
-  top: 500vh;
   height: 100vh;
-  width: 100%;
-  /*background-color: rgb(37, 57, 87);*/
   z-index: 3;
 }
 
 .world-container{
-  position: absolute;
-  top: 800vh;
-  height: 130vh;
-  width: 100%;
-  /*background-color: rgb(85, 165, 161);*/
   z-index: 4;
 }
 
 .character-container{
-  position: absolute;
-  top: 1000vh;
-  height: 130vh;
   width: 100%;
-  /*background-color: rgb(59, 104, 141);*/
   z-index: 5;
 }
 
 .author-container{
-  position: absolute;
-  top: 1200vh;
-  height: 130vh;
-  width: 100%;
+  height: 100vh;
   /*background-color: rgb(47, 80, 107);*/
   z-index: 6;
 }
@@ -120,9 +98,9 @@ body{
 }
 
 .vivian{
-  height: 500px;
+  height: 550px;
   position: fixed;
-  top: 22%;
+  top: 15%;
 }
 
 /*************************** MAIN ***************************/
@@ -141,6 +119,13 @@ body{
   left: 50%;
   font-size: 1rem;
   transform: translate(-50%, -35%);
+}
+
+.logo{
+  width: 55%;
+  position: fixed;
+  top: 30%;
+  left: 35%;
 }
 
 /************************ BIOGRAPHY ***************************/
@@ -416,8 +401,63 @@ body{
 
 /*************************** Deimos ***************************/
 
-.deimos{
-  width: 100%;
+.deimos-wrapper{
+  /*background-color: aliceblue;*/
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 160px 1fr 1fr;
+  row-gap: 2%;
+}
+
+#deimos-title{
+  grid-row: 1 / 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.clock{
+  height: 40%;
+  grid-row: 2 / 3;
+  grid-column: 1/ 2;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.history{
+  grid-row: 2 / 3;
+  grid-column: 2/ 3;
+  width: 50%;
+}
+
+#history-title{
+  font-size: xx-large;
+}
+
+#history-text{
+  font-size: x-large;
+}
+
+.house{
+  height: 40%;
+  grid-row: 3 / 4;
+  grid-column: 1/ 2;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.society{
+  grid-row: 3 / 4;
+  grid-column: 2/ 3;
+  width: 50%;
+}
+
+#society-title{
+  font-size: xx-large;
+}
+
+#society-text{
+  font-size: x-large;
 }
 
 /*************************** Characters ***************************/
@@ -466,6 +506,27 @@ body{
   text-align: center;
   line-height: 3;
 }
+
+/*************************** AUTHOR ***************************/
+
+.author-wrapper{
+  position: relative;
+  height: 100vh;
+}
+
+.authorImg{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.back-to-top{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 7;
+}
+
 
 /*************************** ANIMATIONS ***************************/
 
