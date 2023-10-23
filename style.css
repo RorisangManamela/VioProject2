@@ -73,6 +73,7 @@ body{
 }
 
 .world-container{
+  /*height: 100vh;*/
   z-index: 4;
 }
 
@@ -406,7 +407,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   grid-template-rows: 160px 1fr 1fr;
-  row-gap: 2%;
+  /*row-gap: 1%;*/
 }
 
 #deimos-title{
@@ -417,7 +418,7 @@ body{
 }
 
 .clock{
-  height: 40%;
+  height: 30%;
   grid-row: 2 / 3;
   grid-column: 1/ 2;
   text-align: center;
@@ -439,7 +440,7 @@ body{
 }
 
 .house{
-  height: 40%;
+  height: 30%;
   grid-row: 3 / 4;
   grid-column: 1/ 2;
   text-align: center;
